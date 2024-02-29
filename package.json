@@ -1,5 +1,5 @@
 {
-  "name": "05-game-project",
+  "name": "Kirby's holidays in the Netherlands",
   "version": "0.1.7",
   "description": "Einstiegspunkt in ein Spielprojekt.",
   "type": "module",
@@ -10,7 +10,7 @@
     "format": "prettier --write src/"
   },
   "keywords": [],
-  "author": "Cedric Geissmann",
+  "author": "Shania, Noah und Käthe",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^8.57.0",
