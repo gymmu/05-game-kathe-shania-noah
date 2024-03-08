@@ -64,7 +64,7 @@ export function mushroomJumpAndRun(x, y) {
  */
 export function flowerJumpAndRun(x, y) {
   k.add([
-    k.sprite("flower"),
+    k.sprite("waffle"),
     k.pos(k.vec2(x, y).scale(TILESIZE)),
     k.body({ isStatic: true }),
     k.area(),
@@ -175,10 +175,10 @@ export function treeRPG(x, y) {
  */
 export function flowerRPG(x, y) {
   k.add([
-    k.sprite("flower"),
+    k.sprite("waffle"),
     k.pos(x * TILESIZE, y * TILESIZE),
     k.area(),
-    "flower",
+    "waffle",
     "heal",
     {
       isConsumable: true,
