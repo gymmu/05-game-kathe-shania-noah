@@ -1,13 +1,13 @@
-swwwwwwwwwwwwcwwwws
-s.................s
-s.................s
-s......tttttttt...s
-s......tmmmmmmt...s
-s......t......t...s
-s.............TTTTs
-s...........f.....s
-s.................s
-s.................s
-s.................s
-s.........p.......s
-sssssssssssssssssss
+swwwwwwwwwwwwcwwwwswwwws
+sTTTTTTTTTTTT.T........s
+s.............T...... .s
+s...........T..........s
+sTTT........T..........s
+sTTT.TTTTttTTTT........s
+s..T ....T....TTTTTTTTTs
+s..m.....T..fT....T....s
+s........TTTTT....TT...s
+s..f.........T.....T...s
+sTTTTTTTTTTT.T.TTTTT...s
+sp.....................s
+ssssssssssssssssssssssss
