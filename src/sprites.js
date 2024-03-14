@@ -11,13 +11,13 @@ import { k } from "./game.js"
  * damit können einfach andere Atmosphären im Spiel erzeugt werden.
  */
 export default function loadSprites() {
-  k.loadSpriteAtlas("sprites/char.png", {
+  k.loadSpriteAtlas("sprites/char-kirby2.png", {
     hero: {
       // Alles war hier kommt, gehört zum Sprite `hero`
       x: 0, // x-Koordinate des Pixels wo das Sprite beginnt.
       y: 0, // y-Koordinate des Pixels wo das Sprite beginnt.
-      width: 3 * TS, // Die Breite des Sprites in Pixeln. Hier sind jeweils 3 Animationen nebeneinander, deshalb 3 * TILESIZE
-      height: 4 * TS, // Die Höhe des Sprites in Pixeln. Hier sind die 4 Laufrichtungen untereinander, deshalb 4 * TILESIZE
+      width: 3 * TS * 2, // Die Breite des Sprites in Pixeln. Hier sind jeweils 3 Animationen nebeneinander, deshalb 3 * TILESIZE
+      height: 4 * TS * 2, // Die Höhe des Sprites in Pixeln. Hier sind die 4 Laufrichtungen untereinander, deshalb 4 * TILESIZE
       sliceX: 3, // In der x-Richtung sind es 3 Kacheln, so wird es gleichmässig aufgeteilt.
       sliceY: 4, // In der y-Richtung sind es 4 Kacheln, so wird es gleichmässig aufgeteilt.
       anims: {
