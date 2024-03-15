@@ -43,7 +43,7 @@ export function wallJumpAndRun(x, y) {
  */
 export function mushroomJumpAndRun(x, y) {
   k.add([
-    k.sprite("mushroom"),
+    k.sprite("belgianwaffle"),
     k.pos(k.vec2(x, y).scale(TILESIZE)),
     k.body({ isStatic: true }),
     k.area(),
@@ -191,7 +191,7 @@ export function flowerRPG(x, y) {
  */
 export function mushroomRPG(x, y) {
   k.add([
-    k.sprite("mushroom"),
+    k.sprite("belgianwaffle"),
     k.pos(x * TILESIZE, y * TILESIZE),
     k.area(),
     "obstacle",
