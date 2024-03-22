@@ -58,7 +58,6 @@ export function mushroomJumpAndRun(x, y) {
     },
   ])
 }
-
 /**
  * Ein Spielobjekt Blume, das den Spieler heilt.
  */
@@ -199,4 +198,13 @@ export function mushroomRPG(x, y) {
       isConsumable: true,
     },
   ])
+}
+
+/** Ein Objekt, das dem Spieler schadet und von sich selbst bewegen kann. */
+
+export function movingObject(x, y) {
+  let isMovingUp = false
+  let speed = 2 // Adjust the speed as needed
+
+  k.add([k.sprite("belger-feind"), k.pos(x * TILESIZE, y * TILESIZE), k.area()])
 }
