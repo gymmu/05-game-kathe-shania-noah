@@ -12,7 +12,7 @@
 - [ ] Spielkomponenten verstehen, und neue erstellen (`src/player.js` und
       `src/maps.js`)
 - [ ] Präsentation für das Endprodukt in (`pres.html`) anpassen
-- [ ] Hintergrund des Spieles änderen
+- [-] Hintergrund des Spieles änderen
 - [ ] Blöcke hinzufügen
 - [ ] Labyrinth gestalten
 - [ ] Laufende belgen hinzufügen

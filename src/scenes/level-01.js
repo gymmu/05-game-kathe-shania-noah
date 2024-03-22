@@ -35,6 +35,15 @@ k.scene("level-01", async () => {
   // Position vom Spieler richtig gesetzt werden kann.
   await generateMapJumpAndRun("maps/level-01.txt")
 
+  k.add([
+    k.sprite("bg-clouds"),
+    k.pos(k.width() / 2, k.height() / 2),
+    k.z(-10),
+    k.fixed(),
+    k.anchor("center"),
+    k.scale(1),
+  ])
+
   // Hier laden wir die generelle Spiellogik. Also was passieren soll wenn
   // der Spieler mit einem Objekt kollidiert.
   addGeneralGameLogic()
