@@ -49,4 +49,6 @@ export default function loadSprites() {
     waffle: { x: 0 * TS, y: 2 * TS, width: TS, height: TS },
     mushroom: { x: 2 * TS, y: 0 * TS, width: TS, height: TS },
   })
+
+  k.loadSprite("bg-clouds", "sprites/info.jpg")
 }
