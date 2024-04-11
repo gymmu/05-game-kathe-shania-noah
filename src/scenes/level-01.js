@@ -43,6 +43,7 @@ k.scene("level-01", async () => {
     k.anchor("center"),
     k.scale(1),
   ])
+  k.play("aluma", { loop: true })
 
   // Hier laden wir die generelle Spiellogik. Also was passieren soll wenn
   // der Spieler mit einem Objekt kollidiert.

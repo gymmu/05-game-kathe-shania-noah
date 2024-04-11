@@ -45,6 +45,7 @@ export const k = kaboom({
  * aufrufen, damit die Graphiken auch verfügbar sind.
  */
 loadSprites()
+k.loadSound("aluma", "music/aluma.mp3")
 
 /**
  * Diese Funktion erstellt die generelle Spiellogik die in allen Levels gilt.
