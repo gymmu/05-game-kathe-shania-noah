@@ -208,3 +208,12 @@ export function movingObject(x, y) {
 
   k.add([k.sprite("belger-feind"), k.pos(x * TILESIZE, y * TILESIZE), k.area()])
 }
+
+export function tulipRPG(x, y) {
+  k.add([
+    k.sprite("tulip"),
+    k.pos(x * TILESIZE, y * TILESIZE),
+    k.body({ isStatic: true }),
+    k.area(),
+  ])
+}

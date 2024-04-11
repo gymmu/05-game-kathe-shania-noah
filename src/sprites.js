@@ -48,6 +48,7 @@ export default function loadSprites() {
     wall: { x: 3 * TS, y: 1 * TS, width: TS, height: TS },
     waffle: { x: 0 * TS, y: 2 * TS, width: TS, height: TS },
     mushroom: { x: 2 * TS, y: 0 * TS, width: TS, height: TS },
+    tulip: { x: 2 * TS, y: 2 * TS, width: TS, height: TS },
   })
 
   k.loadSprite("bg-clouds", "sprites/info.jpg")
