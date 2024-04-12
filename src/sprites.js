@@ -34,6 +34,21 @@ export default function loadSprites() {
     },
   })
 
+  k.loadSpriteAtlas("sprites/belger-feind.png", {
+    enemy: {
+      x: 0,
+      y: 0,
+      width: 3 * TS * 2,
+      height: 2 * TS * 2,
+      sliceX: 3,
+      sliceY: 2,
+      anims: {
+        runDown: { from: 0, to: 2, loop: true, speed: 5 },
+        runUp: { from: 3, to: 5, loop: true, speed: 5 },
+      },
+    },
+  })
+
   /**
    * Hier werden alle sprites für die statischen Spielobjekte geladen.
    */

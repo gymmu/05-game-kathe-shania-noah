@@ -94,6 +94,8 @@ export async function generateMapRPG(mapfile) {
         GameObjects.movingObject(x, y)
       } else if (char === "n") {
         GameObjects.tulipRPG(x, y)
+      } else if (char === "b") {
+        GameObjects.enemy(x, y)
       }
     }
   }

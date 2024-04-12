@@ -202,11 +202,13 @@ export function mushroomRPG(x, y) {
 
 /** Ein Objekt, das dem Spieler schadet und von sich selbst bewegen kann. */
 
-export function movingObject(x, y) {
-  let isMovingUp = false
-  let speed = 2 // Adjust the speed as needed
-
-  k.add([k.sprite("belger-feind"), k.pos(x * TILESIZE, y * TILESIZE), k.area()])
+export function enemy(x, y) {
+  k.add([
+    k.sprite("enemy", { anim: "runDown" }),
+    k.pos(x * TILESIZE, y * TILESIZE),
+    k.area(),
+    k.scale(0.5),
+  ])
 }
 
 export function tulipRPG(x, y) {
