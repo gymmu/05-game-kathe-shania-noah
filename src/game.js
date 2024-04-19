@@ -45,6 +45,7 @@ export const k = kaboom({
  * aufrufen, damit die Graphiken auch verfügbar sind.
  */
 loadSprites()
+k.loadSound("aluma", "music/aluma.mp3")
 
 /**
  * Diese Funktion erstellt die generelle Spiellogik die in allen Levels gilt.
@@ -87,13 +88,7 @@ export function addGeneralGameLogic() {
    * Sekunde verdoppelt. Danach wird die Geschwindigkeit wieder zurück
    * gesetzt.
    */
-  player.on("heal", () => {
-    const oldSpeed = player.speed
-    player.speed *= 2
-    k.wait(1, () => {
-      player.speed = oldSpeed
-    })
-  })
+  player.on("heal", () => {})
 
   player.on("death", async () => {
     await import("./scenes/lose.js")
@@ -120,7 +115,7 @@ function createHPBar() {
 
   bar.add([
     k.rect(HP_BAR_WIDTH, HP_BAR_HEIGHT),
-    k.outline(4, k.GREEN.darken(100)),
+    k.outline(4, k.WHITE),
     k.color(0, 0, 0),
     k.anchor("left"),
     k.pos(10, 0),
@@ -129,7 +124,7 @@ function createHPBar() {
   // Dieser Teil zeigt den grünenden Balken an.
   bar.add([
     k.rect((player.hp() / player.max_hp) * HP_BAR_WIDTH, HP_BAR_HEIGHT),
-    k.color(0, 255, 0),
+    k.color(248, 157, 213),
     k.anchor("left"),
     k.pos(10, 0),
     {

@@ -43,7 +43,7 @@ export function wallJumpAndRun(x, y) {
  */
 export function mushroomJumpAndRun(x, y) {
   k.add([
-    k.sprite("mushroom"),
+    k.sprite("belgianwaffle"),
     k.pos(k.vec2(x, y).scale(TILESIZE)),
     k.body({ isStatic: true }),
     k.area(),
@@ -58,13 +58,12 @@ export function mushroomJumpAndRun(x, y) {
     },
   ])
 }
-
 /**
  * Ein Spielobjekt Blume, das den Spieler heilt.
  */
 export function flowerJumpAndRun(x, y) {
   k.add([
-    k.sprite("flower"),
+    k.sprite("waffle"),
     k.pos(k.vec2(x, y).scale(TILESIZE)),
     k.body({ isStatic: true }),
     k.area(),
@@ -175,10 +174,10 @@ export function treeRPG(x, y) {
  */
 export function flowerRPG(x, y) {
   k.add([
-    k.sprite("flower"),
+    k.sprite("waffle"),
     k.pos(x * TILESIZE, y * TILESIZE),
     k.area(),
-    "flower",
+    "waffle",
     "heal",
     {
       isConsumable: true,
@@ -191,12 +190,32 @@ export function flowerRPG(x, y) {
  */
 export function mushroomRPG(x, y) {
   k.add([
-    k.sprite("mushroom"),
+    k.sprite("belgianwaffle"),
     k.pos(x * TILESIZE, y * TILESIZE),
     k.area(),
     "obstacle",
     {
       isConsumable: true,
     },
+  ])
+}
+
+/** Ein Objekt, das dem Spieler schadet und von sich selbst bewegen kann. */
+
+export function enemy(x, y) {
+  k.add([
+    k.sprite("enemy", { anim: "runDown" }),
+    k.pos(x * TILESIZE, y * TILESIZE),
+    k.area(),
+    k.scale(0.5),
+  ])
+}
+
+export function tulipRPG(x, y) {
+  k.add([
+    k.sprite("tulip"),
+    k.pos(x * TILESIZE, y * TILESIZE),
+    k.body({ isStatic: true }),
+    k.area(),
   ])
 }

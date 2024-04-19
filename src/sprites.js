@@ -11,13 +11,13 @@ import { k } from "./game.js"
  * damit können einfach andere Atmosphären im Spiel erzeugt werden.
  */
 export default function loadSprites() {
-  k.loadSpriteAtlas("sprites/char.png", {
+  k.loadSpriteAtlas("sprites/char-kirby2.png", {
     hero: {
       // Alles war hier kommt, gehört zum Sprite `hero`
       x: 0, // x-Koordinate des Pixels wo das Sprite beginnt.
       y: 0, // y-Koordinate des Pixels wo das Sprite beginnt.
-      width: 3 * TS, // Die Breite des Sprites in Pixeln. Hier sind jeweils 3 Animationen nebeneinander, deshalb 3 * TILESIZE
-      height: 4 * TS, // Die Höhe des Sprites in Pixeln. Hier sind die 4 Laufrichtungen untereinander, deshalb 4 * TILESIZE
+      width: 3 * TS * 2, // Die Breite des Sprites in Pixeln. Hier sind jeweils 3 Animationen nebeneinander, deshalb 3 * TILESIZE
+      height: 4 * TS * 2, // Die Höhe des Sprites in Pixeln. Hier sind die 4 Laufrichtungen untereinander, deshalb 4 * TILESIZE
       sliceX: 3, // In der x-Richtung sind es 3 Kacheln, so wird es gleichmässig aufgeteilt.
       sliceY: 4, // In der y-Richtung sind es 4 Kacheln, so wird es gleichmässig aufgeteilt.
       anims: {
@@ -34,17 +34,37 @@ export default function loadSprites() {
     },
   })
 
+  k.loadSpriteAtlas("sprites/belger-feind.png", {
+    enemy: {
+      x: 0,
+      y: 0,
+      width: 3 * TS * 2,
+      height: 2 * TS * 2,
+      sliceX: 3,
+      sliceY: 2,
+      anims: {
+        runDown: { from: 0, to: 2, loop: true, speed: 5 },
+        runUp: { from: 3, to: 5, loop: true, speed: 5 },
+      },
+    },
+  })
+
   /**
    * Hier werden alle sprites für die statischen Spielobjekte geladen.
    */
   k.loadSpriteAtlas("sprites/ground.png", {
     grass: { x: 0, y: 0, width: TS, height: TS }, // Hier geben wir in Pixeln an, wo die Grafik für das Spielobjekt anfängt, und aufhört (oben-links bis unten-rechts).
     stone: { x: 1 * TS, y: 0, width: TS, height: TS }, // Wir verwenden hier TILESIZE, weil all unsere Grafiken im Moment genau 32x32 Pixel sind.
-    mushroom: { x: 2 * TS, y: 0 * TS, width: TS, height: TS },
-    flower: { x: 3 * TS, y: 0 * TS, width: TS, height: TS },
+    belgianwaffle: { x: 1 * TS, y: 2 * TS, width: TS, height: TS },
+    stroopwaffel: { x: 3 * TS, y: 0 * TS, width: TS, height: TS },
     trunk: { x: 0 * TS, y: 1 * TS, width: TS, height: TS },
     tree: { x: 1 * TS, y: 1 * TS, width: TS, height: TS },
     cave: { x: 2 * TS, y: 1 * TS, width: TS, height: TS },
     wall: { x: 3 * TS, y: 1 * TS, width: TS, height: TS },
+    waffle: { x: 0 * TS, y: 2 * TS, width: TS, height: TS },
+    mushroom: { x: 2 * TS, y: 0 * TS, width: TS, height: TS },
+    tulip: { x: 2 * TS, y: 2 * TS, width: TS, height: TS },
   })
+
+  k.loadSprite("bg-clouds", "sprites/info.jpg")
 }

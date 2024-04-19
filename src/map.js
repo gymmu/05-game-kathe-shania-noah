@@ -48,6 +48,8 @@ export async function generateMapJumpAndRun(mapfile) {
         GameObjects.flowerJumpAndRun(x, y)
       } else if (char === "g") {
         GameObjects.goalJumpAndRun(x, y)
+      } else if (char === "n") {
+        GameObjects.tulipRPG(x, y)
       }
     }
   }
@@ -88,6 +90,12 @@ export async function generateMapRPG(mapfile) {
         GameObjects.flowerRPG(x, y)
       } else if (char === "m") {
         GameObjects.mushroomRPG(x, y)
+      } else if (char === "B") {
+        GameObjects.movingObject(x, y)
+      } else if (char === "n") {
+        GameObjects.tulipRPG(x, y)
+      } else if (char === "b") {
+        GameObjects.enemy(x, y)
       }
     }
   }
