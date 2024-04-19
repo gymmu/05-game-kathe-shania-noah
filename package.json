@@ -1,6 +1,6 @@
 {
   "name": "Kirby's holidays in the Netherlands",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "Einstiegspunkt in ein Spielprojekt.",
   "type": "module",
   "scripts": {
